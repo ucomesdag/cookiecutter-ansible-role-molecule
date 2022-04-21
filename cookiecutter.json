@@ -1,0 +1,12 @@
+{
+  "author": "Uco Mesdag",
+  "company": "none",
+  "homepage": "https://mesd.ag/",
+  "role_name": "role_name",
+  "role_description": "Ansible role to install and configure {{ cookiecutter.role_name }}.",
+  "role_license": ["Apache-2.0", "GPL-2.0-or-later", "GPL-3.0-only", "BSD-3-Clause", "MIT", "CC-BY-4.0"],
+  "role_namespace": "ucomesdag",
+  "role_platforms": "Alpine:any;Amazon:Candidate;ArchLinux:any;EL:9,8;Debian:bullseye,buster;Fedora:36,35,34,33;OpenSUSE:15.2;Ubuntu:jammy,focal,bionic",
+  "min_ansible_version": "2.10",
+  "min_jinja_version": "2.11.2"
+}

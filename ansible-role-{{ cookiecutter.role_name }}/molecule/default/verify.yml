@@ -1,0 +1,13 @@
+---
+- name: Verify
+  hosts: all
+  gather_facts: no
+  become: no
+
+  tasks:
+    - name: test connection
+      ansible.builtin.ping:
+
+    - name: Example assertion
+      ansible.builtin.assert:
+        that: True
