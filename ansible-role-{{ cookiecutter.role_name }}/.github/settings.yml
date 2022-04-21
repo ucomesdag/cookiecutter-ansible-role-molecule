@@ -1,0 +1,5 @@
+---
+repository:
+  description: {{ cookiecutter.role_description }}
+  homepage: {{ cookiecutter.homepage }}
+  topics: {{ cookiecutter.role_topics }}

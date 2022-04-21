@@ -1,0 +1,17 @@
+---
+roles:
+  {%- if not cookiecutter.role_dependencies -%}
+    {{ ' ' ~ [] }}
+  {%- else %}
+    {%- for dependency in cookiecutter.role_dependencies.split(',') %}
+  - {{ dependency | trim }}
+    {%- endfor %}
+  {%- endif %}
+collections:
+  {%- if not cookiecutter.role_collections -%}
+    {{ ' ' ~ [] }}
+  {%- else %}
+    {%- for collection in cookiecutter.role_collections.split(',') %}
+  - {{ collection | trim }}
+    {%- endfor %}
+  {%- endif %}

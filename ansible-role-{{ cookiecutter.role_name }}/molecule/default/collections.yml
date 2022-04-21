@@ -1,0 +1,9 @@
+---
+collections:
+  {%- if not cookiecutter.role_collections -%}
+    {{ ' ' ~ [] }}
+  {%- else %}
+    {%- for collection in cookiecutter.role_collections.split(',') %}
+  - name:  {{ collection | trim }}
+    {%- endfor %}
+  {%- endif %}
